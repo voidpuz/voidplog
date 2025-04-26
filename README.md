@@ -18,9 +18,10 @@ Voidplog - void pointer's, blog. Created during the lesson for B4 group
 7. python manage.py makemigrations && python manage.py migrate qildik
 8. Post modeli uchun adminka config qildik
 9. Superuser yaratdik va adminkaga kirib korib tekshirdik
-10. REST_FRAMEWORK o'rnatamiz va INSTALLED_APPS ga config qo'shamiz
-11. Post List API chiqaramiz:
+10. Image yuklash qismini tekshirdik, media fayllarni configuratsiya qildik
+11. REST_FRAMEWORK o'rnatamiz va INSTALLED_APPS ga config qo'shamiz
+12. Post List API chiqaramiz:
     - views.py fayli ichiga PostListAPIView yozamiz, 
     - serializers.py fayliga PostListSerializer yozamiz
     - urls.py faylini ochib /posts/ GET api endpoint ochamiz.
-12. Browsable API bilan tanishamiz.
+13. Browsable API bilan tanishamiz.

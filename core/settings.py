@@ -39,11 +39,15 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
+EXTERNAL_APPS = [
+    'rest_framework',
+]
+
 LOCAL_APPS = [
     'posts',
 ]
 
-INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
+INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS + EXTERNAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
