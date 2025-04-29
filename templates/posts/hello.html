@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Posts</title>
+    <link rel="stylesheet" href="{% static "posts/css/style.css" %}">
+</head>
+<body>
+
+    <h1>Recent Posts</h1>
+
+    {% for post in posts %}
+    <div class="post">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-date">{{post.created_at}}</p>
+        <p class="post-content">{{post.description}}</p>
+        {% if post.cover %}
+        <img src="{{ post.cover.url }}" width=100 height=50 />
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    {{ view }}
+
+    <script src="{% static "posts/js/script.js" %}">
+
+    </body>
+</html>
